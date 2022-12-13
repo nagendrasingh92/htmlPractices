@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Html tag and attribute practice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="text/html; charset=utf-8" http-equiv="content-Type">
+<meta content="width=device-width" name="viewport">
+<meta content-"IE-edge" http-equiv="X-UA-Compatible">
+<style>
+.section-wrapper{
+	margin: 10px;
+	padding: 10px 0px;
+	background-color: #ddebdc;
+	}
+.section-wrapper .title{
+	padding: 0px 10px;
+	}
+.section-wrapper .output-wrapper{
+	padding: 10px 20px;
+	background-color: #a9e0b2;
+	}
+.section-wrapper .code-wrapper{
+	border: 1px solid #999999;
+	}
+.section-wrapper .code-wrapper .textarea{
+	width: 99%;
+	}
+</style>
+
+</head>
+
+<body>
+
+<div class="section-wrapper">
+	<p class="title">h1 tage attributes:- title, style, class, id... all global attributes.</p>
+	<p class="title">h2 tage attributes:- title, style, class, id... all global attributes.</p>
+	<p class="title">h3 tage attributes:- title, style, class, id... all global attributes.</p>
+	<p class="title">h4 tage attributes:- title, style, class, id... all global attributes.</p>
+	<p class="title">h5 tage attributes:- title, style, class, id... all global attributes.</p>
+	<p class="title">h6 tage attributes:- title, style, class, id... all global attributes.</p>
+</div>
+
+<div class="output-wrapper">
+	<h1>Heading tag</h1>
+	<h2>Heading tag</h2>
+	<h3>Heading tag</h3>
+	<h4>Heading tag</h4>
+	<h5>Heading tag</h5>
+	<h6>Heading tag</h6>
+</div>
+
+<div class="code-wrapper">
+	<textarea class=textarea" disabled cols="1" rows="6">
+	<h1>Heading tag</h1>
+	<h2>Heading tag</h2>
+	<h3>Heading tag</h3>
+	<h4>Heading tag</h4>
+	<h5>Heading tag</h5>
+	<h6>Heading tag</h6>
+
+</body>
+</html>
+
+
+
+
+Question 1. When we add two or more classes with the same name. which class will be used in body?
