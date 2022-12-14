@@ -935,13 +935,15 @@
     <div class="output-wrapper">
       <figure>
         <img src="F:\underroot T\homework help\6.jpg" alt="math solution" style="width:20%">
+        <figcaption>Fig. 1 Math solution</figcaption>
       </figure>
     </div>
 
     <div class="code-wrapper">
-      <textarea class="textarea" disabled cols="1" rows="2">
+      <textarea class="textarea" disabled cols="1" rows="5">
         <figure>
           <img src="F:\underroot T\homework help\6.jpg" alt="math solution" style="width:20%">
+          <figcaption>Fig. 1 Math solution</figcaption>
         </figure>
       </textarea>
     </div>
@@ -961,28 +963,110 @@
         <fieldset>
           <legend>Personal details</legend>
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" id="fname" name="fname" value="" placeholder="First Name" required><br>
+        
         <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="psd">Password:</label>
-        <input type="password" id="psd">
-        <input type="submit" value="Submit">
+        <input type="text" id="lname" name="lname" value="" maxlength="10"><br>
+        
+        <label for="number">Contact Number:</label>
+        <input type="tel" name="number" id="number" value="" pattern="[0-9]{10}" maxlength="10"><br>
+        
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">male</label><br>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">female</label><br>
+        
+        <label for="language">Select language</label><br>
+        <input type="checkbox" name="language" id="english" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" name="language" id="hindi" value="hindi">
+        <label for="hindi">Hindi</label><br>
+        
+        <label for="cityname">Select City</label>
+        <select name="cityname" id="cityname" multiple>
+          <option selected>none</option>
+          <option value="udaipur">Udaipur</option>
+          <option value="jaipur">Jaipur</option>
+        </select><br>
+        
+        <label for="comments">Enter any comments</label><br>
+        <textarea name="" id="comments" cols="20" rows="5"></textarea><br>
+        
+        <label for="password">Enter password</label>
+        <input type="password" name="password" id="password"><br>
+        
+        <label for="color">Select any color</label>
+        <input type="color" name="color" id="color"><br>
+        
+        <lable for="date">Select any date</lable>
+        <input type="date" name="date" id="date"><br>
+        
+        <label for="mail">Enter email</label>
+        <input type="email" name="mail" id="mail"><br>
+        
+        <input type="search" name="" id="" placeholder="search"><br>
+        
+        <input type="button" name="submit" id="submit" value="submit">
+        <button type="reset">reset</button>
+        <button type="submit">Click here to submit</button>
         </fieldset>
       </form>
     </div>
 
     <div class="code-wrapper">
-      <textarea class="textarea" disabled cols="1" rows="13">
+      <textarea class="textarea" disabled cols="1" rows="53">
         <form action="" method="get" autocomplete="on" novalidate>
           <fieldset>
             <legend>Personal details</legend>
           <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname"><br><br>
+          <input type="text" id="fname" name="fname" value="" placeholder="First Name" required><br>
+          
           <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname"><br><br>
-          <label for="psd">Password:</label>
-          <input type="password" id="psd">
-          <input type="submit" value="Submit">
+          <input type="text" id="lname" name="lname" value="" maxlength="10"><br>
+          
+          <label for="number">Contact Number</label>
+          <input type="tel" name="number" id="number" value="" pattern="[0-9]{10}" maxlength="10"><br>
+          
+          <label for="gender">Gender</label><br>
+          <input type="radio" name="gender" value="male" id="male">
+          <label for="male">male</label><br>
+          <input type="radio" name="gender" value="female" id="female">
+          <label for="female">female</label><br>
+          
+          <label for="language">Select language</label><br>
+          <input type="checkbox" name="language" id="english" value="english">
+          <label for="english">English</label>
+          <input type="checkbox" name="language" id="hindi" value="hindi">
+          <label for="hindi">Hindi</label><br>
+          
+          <label for="cityname">Select a City</label>
+          <select name="cityname" id="cityname">
+            <option selected>none</option>
+            <option value="udaipur">Udaipur</option>
+            <option value="jaipur">Jaipur</option>
+          </select><br>
+          
+          <label for="comments">Enter any comments</label>
+          <textareaS name="" id="comments" cols="20" rows="5"></textareaS><br>
+          
+          <label for="password">Enter password</label>
+          <input type="password" name="password" id="password"><br>
+          
+          <label for="color">Select any color</label>
+          <input type="color" name="color" id="color"><br>
+          
+          <lable for="date">Select any date</lable>
+          <input type="date" name="date" id="date"><br>
+          
+          <label for="mail">Enter email</label>
+          <input type="email" name="mail" id="mail"><br>
+          
+          <input type="search" name="" id="" placeholder="search"><br>
+          
+          <input type="button" name="submit" id="submit" value="submit">
+          <button type="reset">reset</button>
+          <button type="submit">Click here to submit</button>
           </fieldset>
         </form>
       </textarea>
@@ -1061,30 +1145,122 @@
     <div class="output-wrapper">
       <button onclick="showContent()">Click on me</button>
       <template><img src="F:\underroot T\homework help\6.jpg" width="214" height="204"></template>
-        <script>
-          function showContent() {
-            var temp = document.getElementsByTagName("template")[0];
-            var clon = temp.content.cloneNode(true);
-            document.body.appendChild(clon);
-          }
-          </script>
     </div>
 
     <div class="code-wrapper">
       <textarea class="textarea" disabled cols="1" rows="3">
         <button onclick="showContent()">Click on me</button>
         <template><img src="F:\underroot T\homework help\6.jpg" width="214" height="204"></template>
-        <script>
-          function showContent() {
-            var temp = document.getElementsByTagName("template")[0];
-            var clon = temp.content.cloneNode(true);
-            document.body.appendChild(clon);
-          }
-          </script>
       </textarea>
     </div>
   </div>
 </div>
+
+<div class="section-wrapper">
+  <p class="title">nav tag, attributes :- title, style, id, class, datetime</p>
+  <div >
+
+    <div class="about">
+      <p class="title">nav tag defines a set of navigation links</p>
+    </div>
+
+    <div class="output-wrapper">
+      <nav>
+        <a href="/html/">HTML</a>|
+        <a href="/css/">CSS</a>|
+        <a href="/js/">JavaScript</a>|
+        <a href="/jquery/">jQuery</a>|
+      </nav>
+    </div>
+
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="7">
+        <nav>
+          <a href="/html/">HTML</a>|
+          <a href="/css/">CSS</a>|
+          <a href="/js/">JavaScript</a>|
+          <a href="/jquery/">jQuery</a>|
+        </nav>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<div class="section-wrapper">
+  <p class="title">option tag, attributes :- title, style, id, class, datetime</p>
+  <div >
+
+    <div class="about">
+      <p class="title">option tag defines an option in a select list.</p>
+    </div>
+
+    <div class="output-wrapper">
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option selected>None</Option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="9">
+        <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option selected>None</Option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<div class="section-wrapper">
+  <p class="title">datalist tag, attributes :- title, style, id, class, datetime</p>
+  <div >
+
+    <div class="about">
+      <p class="title">datalist tag specifies a list of pre-defined options for an input element.</p>
+    </div>
+
+    <div class="output-wrapper">
+      <form action="" method="get" autocomplete="on" novalidate>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Internet Explorer"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+      </form>
+    </div>
+
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="11">
+        <form action="" method="get" autocomplete="on" novalidate>
+          <input list="browsers" name="browser">
+          <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+          </datalist>
+        </form>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+
+<form action="" method="get" autocomplete="on" novalidate>
+
 
    <div class="section-wrapper">
     <p class="title">a tag attributes -> style, id, class, href, target</p>
