@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment Exam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <style>
+      .section-wrapper{
+        margin: 10px;
+        padding: 10px 0px;
+        background-color: #ddebdc;
+
+      }
+      .section-wrapper .title{
+        padding: 0px 10px;
+      }
+      .section-wrapper .about{
+        padding: 0px 10px;
+        border:1px solid #f202da;
+        color: rgb(0, 30, 221);
+      }
+      .section-wrapper .output-wrapper{
+        padding: 10px 20px;
+        background-color: #a9e0b2;
+
+      }
+      .section-wrapper .code-wrapper{
+        border:1px solid #999999;
+        margin:5px 0;
+        padding:3px;
+      }
+
+      .section-wrapper .code-wrapper .textarea{
+        width: 99%;
+      }
+    </style>
+</head>
+
+<body>
+
+   <div class="section-wrapper section-1">
+      <p class="title">color: red, hex value(#010101), rgb(0, 255, 0), rgba(0, 255, 0, 0.5), hsl(0, 100%, 50%), hsla(0, 100%, 50%, 0.1)</p>
+      <div >
+        <div class="about">
+          <p class="title">color property specifies the color of text.</p>
+        </div>
+        <div class="output-wrapper">
+            <div class="color">Heading tag</div>
+            <div class="color-hex">Heading tag</div>
+            <div class="color-rgb">Heading tag</div>
+            <div class="color-rgba">Heading tag</div>
+            <div class="color-hsl">Heading tag</div>
+            <div class="color-hsla">Heading tag</div>
+            <style>
+              .section-1 .color {
+                color: red
+              }
+              .section-1 .color-hex {
+                color: #343434;
+              }
+              .section-1 .color-rgb {
+                color: rgb(0, 30, 221)
+              }
+              .section-1 .color-rgba {
+                color:rgba(4, 58, 4, 0.5)
+              }
+              .section-1 .color-hsl {
+                color:hsl(0, 100%, 70%)
+              }
+              .section-1 .color-hsla {
+                color:rgb(217, 206, 5)
+              }
+              </style>
+        </div>
+        <div class="code-wrapper">
+          <textarea class="textarea" disabled cols="1" rows="27">
+            <div class="color">Heading tag</div>
+            <div class="color-hex">Heading tag</div>
+            <div class="color-rgb">Heading tag</div>
+            <div class="color-rgba">Heading tag</div>
+            <div class="color-hsl">Heading tag</div>
+            <div class="color-hsla">Heading tag</div>
+            <style>
+              .section-1 .color {
+                color: red
+              }
+              .section-1 .color-hex {
+                color: #343434;
+              }
+              .section-1 .color-rgb {
+                color: rgb(0, 30, 221)
+              }
+              .section-1 .color-rgba {
+                color:rgba(4, 58, 4, 0.5)
+              }
+              .section-1 .color-hsl {
+                color:hsl(0, 100%, 70%)
+              }
+              .section-1 .color-hsla {
+                color:rgb(217, 206, 5)
+              }
+              </style>
+          </textarea>
+        </div>
+      </div>
+   </div>
+<!--New code start-->
+   <div class="section-wrapper section-2">
+    <p class="title">accent-color: checkbox, radio, range and progress.</p>
+    <div >
+      <div class="about">
+        <p class="title">accent-color property specifies the accent color for user-interface controls.</p>
+      </div>
+      <div class="output-wrapper">
+          <div class="checkbox">
+            <input type="checkbox" id="car" name="car" value="audi" checked>
+            <label for="car">Audi</label><br>
+            <input type="checkbox" id="car1" name="car1" value="bmw" checked>
+            <label for="car1">BMW</label><br>
+          </div>
+          <div class="radio">
+            <input type="radio" id="male" name="gender" value="male" unchecked>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender"  value="female" unchecked>
+            <label for="female">Female</label><br>
+          </div>
+          <div class="range">
+            <input type="range" id="power" name="power" min="0" max="50">
+            <label for="power">Power</label><br>
+          </div>
+          <div class="progress1">
+            <progress id="file" value="72" max="100">72%</progress>
+            <label for="file">Downloading progress:</label><br>
+          </div>
+          <style>
+              input[type=checkbox]{
+                accent-color: green;
+              }
+            .checkbox {
+              color: rgb(0, 30, 221)
+            }
+              input[type=radio]{
+                accent-color: rgb(175, 19, 45);
+              }
+            .radio {
+              color:rgba(4, 58, 4, 0.973)
+            }
+            input[type=range]{
+              accent-color: rgb(12, 236, 12);
+            }
+            .range{
+              color: rgb(246, 29, 5);
+            }
+            progress {
+              accent-color:hsl(0, 100%, 70%)
+            }
+            .progress1{
+              color: #f202da;
+            } 
+            </style>
+      </div>
+      <div class="code-wrapper">
+        <textarea class="textarea" disabled cols="1" rows="48">
+          <div class="checkbox">
+            <input type="checkbox" id="car" name="car" value="audi" checked>
+            <label for="car">Audi</label><br>
+            <input type="checkbox" id="car1" name="car1" value="bmw" checked>
+            <label for="car1">BMW</label><br>
+          </div>
+          <div class="radio">
+            <input type="radio" id="male" name="gender" value="male" unchecked>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender"  value="female" unchecked>
+            <label for="female">Female</label><br>
+          </div>
+          <div class="range">
+            <input type="range" id="power" name="power" min="0" max="50">
+            <label for="power">Power</label><br>
+          </div>
+          <div class="progress1">
+            <progress id="file" value="72" max="100">72%</progress>
+            <label for="file">Downloading progress:</label><br>
+          </div>
+          <style>
+              input[type=checkbox]{
+                accent-color: green;
+              }
+            .checkbox {
+              color: rgb(0, 30, 221)
+            }
+              input[type=radio]{
+                accent-color: rgb(175, 19, 45);
+              }
+            .radio {
+              color:rgba(4, 58, 4, 0.973)
+            }
+            input[type=range]{
+              accent-color: rgb(12, 236, 12);
+            }
+            .range{
+              color: rgb(246, 29, 5);
+            }
+            progress {
+              accent-color:hsl(0, 100%, 70%)
+            }
+            .progress1{
+              color: #f202da;
+            } 
+            </style>
+        </textarea>
+      </div>
+    </div>
+ </div>
+
+<!--New code start-->
+ <div class="section-wrapper section-3">
+  <p class="title">background property: background-color, background-image, background-repeat, background-attachment, background-position, background(shorthand property).</p>
+  <div >
+    <div class="about">
+      <p class="title">background property is a shorthand for specifying the background of an element.</p>
+    </div>
+    <div class="output-wrapper">
+      <div class="bproperty"> 
+        <div class="bcolor">
+          <p>
+            Background color
+          </p>
+        </div>
+        <div class="bimage">
+          <p>
+            Background image
+          </p><br><br>
+        </div>
+        <div class="bshorthand">
+          <p>
+            Background shorthand property
+          </p><br><br>
+        </div>
+      </div> 
+        <style>
+          .bproperty{
+              text-align: center;
+            }
+          .bproperty .bcolor{
+            background-color: #f202da;
+          }
+          .bproperty .bimage{
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/800px-Google_Images_2015_logo.svg.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+          }
+          .bproperty .bshorthand{
+            background:#e01212 url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/800px-Google_Images_2015_logo.svg.png') center fixed no-repeat;
+          }  
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="37">
+        <div class="bproperty"> 
+          <div class="bcolor">
+            <p>
+              Background color
+            </p>
+          </div>
+          <div class="bimage">
+            <p>
+              Background image
+            </p><br><br>
+          </div>
+          <div class="bshorthand">
+            <p>
+              Background shorthand property
+            </p><br><br>
+          </div>
+        </div> 
+          <style>
+            .bproperty{
+                text-align: center;
+              }
+            .bproperty .bcolor{
+              background-color: #f202da;
+            }
+            .bproperty .bimage{
+              background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/800px-Google_Images_2015_logo.svg.png');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-position: center;
+            }
+            .bproperty .bshorthand{
+              background:#e01212 url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/800px-Google_Images_2015_logo.svg.png') center fixed no-repeat;
+            }  
+          </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
+
+<!--New code start-->
+<div class="section-wrapper section-4">
+  <p class="title">border property: border-style, border-width, border-color, border-sides, rounded-borders, border-shorthand.</p>
+  <div >
+    <div class="about">
+      <p class="title">border property specifies what kind of border to display.</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="border-style">
+          Border style
+        </div><br>
+        <div class="border-width">
+          Border width
+        </div><br>
+        <div class="border-color">
+          Border width
+        </div><br>
+        <div class="border-sides">
+          Border sides
+        </div><br>
+        <div class="rounded-border">
+          Rounded-border
+        </div><br>
+        <div class="border-shorthand">
+          Border-shorthand
+        </div><br>
+        <style>
+            .border-style{
+              border-style: solid;
+              border-style: dotted;
+            }
+            .border-width{
+              border-style: solid;
+              border-width: 6px;
+            }
+            .border-color{
+              border-style: solid;
+              border-color: #e01212 green yellow gray;
+            }
+            .border-sides{
+              border-top-style: solid;
+              border-bottom-style: dotted;
+              border-right-style: dashed;
+              border-left-style: double;
+              border-color: #e01212;
+            }
+            .rounded-border{
+              border-style: solid;
+              border-radius: 10px;
+            }
+            .border-shorthand{
+              border: 5px outset darkgoldenrod;
+            }
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="48">
+        <div class="border-style">
+          Border style
+        </div><br>
+        <div class="border-width">
+          Border width
+        </div><br>
+        <div class="border-color">
+          Border width
+        </div><br>
+        <div class="border-sides">
+          Border sides
+        </div><br>
+        <div class="rounded-border">
+          Rounded-border
+        </div><br>
+        <div class="border-shorthand">
+          Border-shorthand
+        </div><br>
+        <style>
+            .border-style{
+              border-style: solid;
+              border-style: dotted;
+            }
+            .border-width{
+              border-style: solid;
+              border-width: 6px;
+            }
+            .border-color{
+              border-style: solid;
+              border-color: #e01212 green yellow gray;
+            }
+            .border-sides{
+              border-top-style: solid;
+              border-bottom-style: dotted;
+              border-right-style: dashed;
+              border-left-style: double;
+              border-color: #e01212;
+            }
+            .rounded-border{
+              border-style: solid;
+              border-radius: 10px;
+            }
+            .border-shorthand{
+              border: 5px outset darkgoldenrod;
+            }
+        </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-5">
+  <p class="title">margin property: margin-shorthand, margin-collapse.</p>
+  <div >
+    <div class="about">
+      <p class="title">margin properties are used to create space around elements, outside of any defined borders.</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="margin-shorthand">
+          Margin Shorthand
+        </div><br>
+        <div class="margin-collapse">
+          Margin Collapse
+        </div><br>
+        <style>
+            .margin-shorthand{
+              margin: 25px 50px 75px 200px;
+            }
+            .margin-collapse{
+              margin: 0 0 0 50px;
+            }
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="15">
+        <div class="margin-shorthand">
+          Margin Shorthand
+        </div><br>
+        <div class="margin-collapse">
+          Margin Collapse
+        </div><br>
+        <style>
+            .margin-shorthand{
+              margin: 25px 50px 75px 200px;
+            }
+            .margin-collapse{
+              margin: 0 0 0 50px;
+            }
+        </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-6">
+  <p class="title">padding property: padding-shorthand.</p>
+  <div >
+    <div class="about">
+      <p class="title">padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="padding-shorthand">
+          Padding Shorthand
+        </div><br>
+        <style>
+            .padding-shorthand{
+              padding: 5px 50px 5px 100px;
+            }
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="10">
+        <div class="padding-shorthand">
+          Padding Shorthand
+        </div><br>
+        <style>
+            .padding-shorthand{
+              padding: 5px 50px 5px 100px;
+            }
+        </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-7">
+  <p class="title">Height/width property: max and min.</p>
+  <div >
+    <div class="about">
+      <p class="title">Height and width properties are used to set the height and width of an element.(padding, borders, or margins are not included)</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="height-e">
+          Height
+        </div><br>
+        <div class="width-e">
+          width
+        </div><br>
+        <style>
+            .height-e{
+              height: 200px;
+              background-color: #e01212;
+            }
+            .width-e{
+              width: 50%;
+              background-color: green;
+            }
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="17">
+        <div class="height-e">
+          Height
+        </div><br>
+        <div class="width-e">
+          width
+        </div><br>
+        <style>
+            .height-e{
+              height: 200px;
+              background-color: #e01212;
+            }
+            .width-e{
+              width: 50%;
+              background-color: green;
+            }
+        </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-8">
+  <p class="title">Outline property: style, width, color, offset, shorthand.</p>
+  <div >
+    <div class="about">
+      <p class="title">An outline is a line that is drawn around elements, outside the borders, to make the element "stand out".</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="outline-e">
+          Outline with style, width, color and offset.
+        </div><br>
+        <div class="outline-shorthand">
+          Outline shorthand.
+        </div><br>
+        <style>
+            .outline-e{
+              outline-style: dotted;
+              outline-width: 5px;
+              outline-color:rgb(12, 236, 12);
+              outline-offset: 5px;
+            }
+            .outline-shorthand{
+              outline: dotted red 5px;
+            }
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="18">
+        <div class="outline-e">
+          Outline with style, width, color and offset.
+        </div><br>
+        <div class="outline-shorthand">
+          Outline shorthand.
+        </div><br>
+        <style>
+            .outline-e{
+              outline-style: dotted;
+              outline-width: 5px;
+              outline-color:rgb(12, 236, 12);
+              outline-offset: 5px;
+            }
+            .outline-shorthand{
+              outline: dotted red 5px;
+            }
+        </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-9">
+  <p class="title">text property: color, alignment, decoration, transformation, spacing, shadow.</p>
+  <div >
+    <div class="about">
+      <p class="title">text formatting properties is used to format text and style text.</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="text-color">
+          Text color.
+        </div><br>
+        <div class="text-alignment">
+          Text alignment.
+        </div><br>
+        <div class="text-decoration">
+          Text decoration.
+        </div><br>
+        <div class="text-transformation">
+          Text transformation.
+        </div><br>
+        <div class="text-spacing">
+          Text spacing.
+        </div><br>
+        <div class="text-shadow">
+          Text shadow.
+        </div><br>
+        <div class="text-shadow-1">
+          Text shadow.
+        </div><br>
+        <style>
+            .text-color{
+            color: #e01212;
+            }
+            .text-alignment{
+              text-align: center;
+            }
+            .text-decoration{
+              text-decoration: line-through;
+            }
+            .text-transformation{
+              text-transform: uppercase;
+            }
+            .text-spacing{
+              letter-spacing: 5px;
+            }
+            .text-shadow{
+              text-shadow: 1px 2px 5px red;
+            }
+            .text-shadow-1{
+              color: white;
+              text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            }
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="46">
+        <div class="text-color">
+          Text color.
+        </div><br>
+        <div class="text-alignment">
+          Text alignment.
+        </div><br>
+        <div class="text-decoration">
+          Text decoration.
+        </div><br>
+        <div class="text-transformation">
+          Text transformation.
+        </div><br>
+        <div class="text-spacing">
+          Text spacing.
+        </div><br>
+        <div class="text-shadow">
+          Text shadow.
+        </div><br>
+        <div class="text-shadow-1">
+          Text shadow.
+        </div><br>
+        <style>
+            .text-color{
+            color: #e01212;
+            }
+            .text-alignment{
+              text-align: center;
+            }
+            .text-decoration{
+              text-decoration: line-through;
+            }
+            .text-transformation{
+              text-transform: uppercase;
+            }
+            .text-spacing{
+              letter-spacing: 5px;
+            }
+            .text-shadow{
+              text-shadow: 1px 2px 5px red;
+            }
+            .text-shadow-1{
+              color: white;
+              text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            }
+        </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-10">
+  <p class="title">font property: family, style, weight, variant, size, google, shorthand.</p>
+  <div >
+    <div class="about">
+      <p class="title">Font property is used to control the look of texts.</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="font-family">
+          Font family.
+        </div><br>
+        <div class="font-style">
+          Font style.
+        </div><br>
+        <div class="font-weight">
+          Font weight.
+        </div><br>
+        <div class="font-variant">
+          Font variant.
+        </div><br>
+        <div class="font-size">
+          Font size.
+        </div><br>
+        <div class="font-google font-effect-fire">
+          Font google.
+        </div><br>
+        <div class="font-shorthand">
+          font shorthand.
+        </div><br>
+        <style>
+            .font-family{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .font-style{
+              font-style: oblique;
+            }
+            .font-weight{
+              font-weight: bold;
+            }
+            .font-variant{
+              font-variant:small-caps;
+            }
+            .font-size{
+              font-size: 40px;
+            }
+            .font-google{
+              font-family: "Sofia", sans-serif;
+            }
+            .font-shorthand{
+              font: italic small-caps bold 12px/30px Georgia, serif;
+            }
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="46">
+        <div class="font-family">
+          Font family.
+        </div><br>
+        <div class="font-style">
+          Font style.
+        </div><br>
+        <div class="font-weight">
+          Font weight.
+        </div><br>
+        <div class="font-variant">
+          Font variant.
+        </div><br>
+        <div class="font-size">
+          Font size.
+        </div><br>
+        <div class="font-google font-effect-fire">
+          Font google.
+        </div><br>
+        <div class="font-shorthand">
+          font shorthand.
+        </div><br>
+        <style>
+            .font-family{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .font-style{
+              font-style: oblique;
+            }
+            .font-weight{
+              font-weight: bold;
+            }
+            .font-variant{
+              font-variant:small-caps;
+            }
+            .font-size{
+              font-size: 40px;
+            }
+            .font-google{
+              font-family: "Sofia", sans-serif;
+            }
+            .font-shorthand{
+              font: italic small-caps bold 12px/30px Georgia, serif;
+            }
+        </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-11">
+  <p class="title">link property: link, visited, hover, active, decoration.</p>
+  <div >
+    <div class="about">
+      <p class="title">link property can be used to style the links in various different ways.</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="link-1">
+          <a href="file:///F:/development/project-clients/html/htmlpractice/csspractice.html" target="_blank">My project</a>
+        </div><br>
+        <style>
+          .link-1 a{
+            color:#fff;
+          }
+          .link-1 a:link {
+	          color: white;
+            background-color: #e01212;
+            text-decoration: dotted;
+            }
+          .link-1 a:visited {
+	          color: rgb(145, 9, 9);
+            text-decoration: dashed;
+            }
+          .link-1 a:hover {
+	          color: hotpink;
+            text-decoration: underline;
+            }
+          .link-1 a:active {
+	          color: rgb(51, 7, 226);
+            text-decoration: line-through;
+            }
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="24">
+        <div class="link-1">
+          <a href="file:///F:/development/project-clients/html/htmlpractice/csspractice.html" target="_blank">My project</a>
+        </div><br>
+        <style>
+          .link-1 a:link {
+            color: white;
+            background-color: #e01212;
+            text-decoration: dotted;
+            }
+          .link-1 a:visited {
+            color: white;
+            text-decoration: dashed;
+            }
+          .link-1 a:hover {
+            color: hotpink;
+            text-decoration: underline;
+            }
+          .link-1 a:active {
+            color: rgb(51, 7, 226);
+            text-decoration: line-through;
+            }
+        </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-12">
+  <p class="title">list property: type, image, position, shorthand, colors.</p>
+  <div >
+    <div class="about">
+      <p class="title">list property defines the appearance, postion, and image for list item elements.</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="list">
+            <ul class="type">
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Chai</li>
+            </ul>
+            <ul class="image">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Chai</li>
+            </ul>
+            <ul class="position">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Chai</li>
+            </ul>
+            <ul class="shorthand">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Chai</li>
+            </ul>
+            <ul class="color">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Chai</li>
+            </ul>
+        </div><br>
+        <style>
+          .list ul.type{
+            list-style-type: square;
+          }
+          .list ul.image{
+            list-style-image: url('./image/download.png');
+          }
+          .list ul.position{
+            list-style-position: inside;
+          }
+          .list ul.shorthand{
+            list-style: square inside url('');
+          }
+          .list ul.color{ 
+            background: rgb(12, 112, 2);
+            padding: 20px;
+          }
+          .list ul.color li{ 
+            background: rgb(172, 243, 165);
+            margin: 5px;
+            color: #e01212;
+          }
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="51">
+        <div class="list">
+          <ul class="type">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Chai</li>
+          </ul>
+          <ul class="image">
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Chai</li>
+          </ul>
+          <ul class="position">
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Chai</li>
+          </ul>
+          <ul class="shorthand">
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Chai</li>
+          </ul>
+          <ul class="color">
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Chai</li>
+          </ul>
+      </div><br>
+      <style>
+        .list ul.type{
+          list-style-type: square;
+        }
+        .list ul.image{
+          list-style-image: url('');
+        }
+        .list ul.position{
+          list-style-position: inside;
+        }
+        .list ul.shorthand{
+          list-style: square inside url('');
+        }
+        .list ul.color{ 
+          background: rgb(12, 112, 2);
+          padding: 20px;
+        }
+        .list ul.color li{ 
+          background: rgb(172, 243, 165);
+          margin: 5px;
+          color: #e01212;
+        }
+      </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-13">
+  <p class="title">table property: borders, size.</p>
+  <div >
+    <div class="about">
+      <p class="title">table property can be utilized to display the layout of the table.</p>
+    </div>
+    <div class="output-wrapper">
+        <div class="main">
+          <table class="border">
+            <caption>Border</caption>
+            <tr>
+              <th>No.</th>
+              <th>car</th>
+              <th>speed</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>audi</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>bmw</td>
+              <td>300</td>
+            </tr>
+          </table>
+          <table class="size">
+            <caption>Size</caption>
+
+            <tr>
+              <th>No.</th>
+              <th>car</th>
+              <th>speed</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>audi</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>bmw</td>
+              <td>300</td>
+            </tr>
+          </table>
+        </div><br>
+        <style>
+           .main .border{
+            border: 1px solid;
+          }
+          .main .border th{
+            border: 1px solid;
+            text-align: left;
+          }
+          .main .border td{
+            border: 1px solid;
+            text-align: left;
+          }
+          .main .size{
+            border: 1px solid;       
+          }
+          .main .size th{
+            border: 1px solid;
+            width: 80px;
+            height: 80px;
+          }
+          .main .size td{
+            border: 1px solid red;
+            vertical-align: bottom;
+            width: 30px;
+            height: 30px;
+          }
+          .main .size tr:hover{
+            background-color: #e01212;
+          }
+
+        </style>
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="72">
+        <div class="main">
+          <table class="border">
+            <caption>Border</caption>
+            <tr>
+              <th>No.</th>
+              <th>car</th>
+              <th>speed</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>audi</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>bmw</td>
+              <td>300</td>
+            </tr>
+          </table>
+          <table class="size">
+            <caption>Size</caption>
+
+            <tr>
+              <th>No.</th>
+              <th>car</th>
+              <th>speed</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>audi</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>bmw</td>
+              <td>300</td>
+            </tr>
+          </table>
+        </div><br>
+        <style>
+           .main .border{
+            border: 1px solid;
+          }
+          .main .border th{
+            border: 1px solid;
+            text-align: left;
+          }
+          .main .border td{
+            border: 1px solid;
+            text-align: left;
+          }
+          .main .size{
+            border: 1px solid;       
+          }
+          .main .size th{
+            border: 1px solid;
+            width: 80px;
+            height: 80px;
+          }
+          .main .size td{
+            border: 1px solid red;
+            vertical-align: bottom;
+            width: 30px;
+            height: 30px;
+          }
+          .main .size tr:hover{
+            background-color: #e01212;
+          }
+
+        </style>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<!--New code start-->
+<div class="section-wrapper section-14">
+  <p class="title">position property: static, relative, fixed, absolute, sticky.</p>
+  <div >
+    <div class="about">
+      <p class="title">position property specifies the type of positioning method used for an element.</p>
+    </div>
+    <div class="output-wrapper">
+      <div class="square1">
+      <div class="circle1">
+      </div>
+      </div>
+      <div class="circle2">
+        absolute
+      </div>
+      <div class="circle3">
+        absolute
+      </div>
+      <div class="circle4">
+        absolute
+      </div>
+      <div class="sticky">
+        Sticky with scroll.
+      </div>
+      <div class="fixed">
+        Fixed on the corner.
+      </div>
+      <style>
+        .square1{
+          position: relative;
+              overflow: hidden;
+              left: 400px;
+              width: 100px;
+              height: 100px;
+              border: 2px solid black;
+              background-color: black;
+        }
+        .circle1{
+          position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 100px;
+              height: 100px;
+              border-radius: 50px;
+              border: 2px solid black;
+              background-color: midnightblue;
+        }
+      </style>
+
+    </div>
+    <div class="code-wrapper">
+      <textarea class="textarea" disabled cols="1" rows="20">
+        
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<div class="example44">
+  <div class="list-check">
+    <ul>
+      <li>sdfsdfs</li>
+      <li>dslfasd</li>
+      <li>dsfdfs</li>
+      <li> dfsds</li>
+    </ul>
+  </div>
+</div>
+<style>
+  div.example44 li:hover{
+    background-color: red;
+  }
+</style>
+
+</body>
+
+</html>
+
+<!--.clearfix::after {
+  content: "" empty string;
+  clear: both;
+  display: table;-->
