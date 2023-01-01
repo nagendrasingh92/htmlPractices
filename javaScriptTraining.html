@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section-wrapper {
+            margin: 10px;
+            padding: 10px 0px;
+            background-color: #ddebdc;
+        }
+
+        .section-wrapper .title {
+            padding: 0px 10px;
+        }
+
+        .section-wrapper .about {
+            padding: 0px 10px;
+            border: 1px solid #f202da;
+            color: rgb(0, 30, 221);
+        }
+
+        .section-wrapper .output-wrapper {
+            padding: 10px 20px;
+            background-color: #a9e0b2;
+
+        }
+
+        .section-wrapper .code-wrapper {
+            border: 1px solid #999999;
+            margin: 5px 0;
+            padding: 3px;
+        }
+
+        .section-wrapper .code-wrapper .textarea {
+            width: 99%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section-wrapper section-1">
+        <p class="title">variables: var, let, const, nothing</p>
+        <div>
+            <div class="about">
+                <p class="title">var declarations are globally scoped or function scoped while let and const are block
+                    scoped.</p>
+            </div>
+            <div class="When to use">
+                <p class="title">for general rule use variables with const and if the value of the variable can changed
+                    use let.</p>
+            </div>
+            <div class="output-wrapper">
+                <div>Enter the first number =
+                    <input class="center" id="first-1" placeholder="first"></p>
+                </div>
+                <div>Enter the second number =
+                    <input class="center" id="second-1" placeholder="second"></p>
+                </div>
+                <p onclick="add('data')">Add</p>
+                <p id="result"></p>
+                <style>
+                    .center {
+                        text-align: center;
+                        width: 45px;
+                        height: 20px;
+                    }
+                </style>
+
+                <script>
+                    function add(data) {
+                        const x = document.getElementById('first-1').value;
+                        let y = document.getElementById('second-1').value;
+                        var z = Number(x) + Number(y);
+                        document.getElementById('result').innerHTML = z;
+                    }
+                </script>
+            </div>
+            <div class="code-wrapper">
+                <textarea class="textarea" disabled cols="1" rows="24">
+                    <div>Enter the first number =
+                        <input class="center" id="first-1" placeholder="first"></p>
+                        </div>
+                        <div>Enter the second number =
+                        <input class="center" id="second-1" placeholder="second"></p>
+                        <p onclick="add('data')">Add</p>
+                        <p id="result"></p>
+                        <style>
+                            .center{
+                                text-align: center;
+                                width: 45px;
+                                height: 20px;
+                            }
+                        </style>
+        
+                        <script>
+                            function add(data) {
+                                const x = document.getElementById('first-1').value;
+                                let y = document.getElementById('second-1').value;
+                                var z = Number(x) + Number(y);
+                                document.getElementById('result').innerHTML = z;
+                            }
+                        </script>
+            </textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- New code start here-->
+
+    <div class="section-wrapper section-2" id="section-2">
+        <p class="title">Arithmetic operators :- +, -, *, /, % <br>
+            Assignment operators :- =, +=, -=, *=, %=, /=
+        </p>
+        <div>
+            <div class="about">
+                <p class="title">var declarations are globally scoped or function scoped while let and const are block
+                    scoped.</p>
+            </div>
+            <div class="When to use">
+                <p class="title">For general rule use variables with const and if the value of the variable can changed
+                    use let.</p>
+            </div>
+            <div class="output-wrapper">
+                <div class="field-wrap">
+                    <div>Enter the first number =
+                        <input type="number" class="center" id="first-2" placeholder="first" name="first-2"></p>
+                        <span class="error-1"></span>
+                    </div>
+                </div>
+                <div class="field-wrap">
+                    <div>Enter the second number =
+                        <input type="number" class="center" id="second-2" placeholder="second" name="second-2"></p>
+                        <span class="error-1"></span>
+                    </div>
+                </div>
+                <p onclick="calculate('add')">Add</p>
+                <p onclick="calculate('sub')">Subtract</p>
+                <p onclick="calculate('mul')">Multiply</p>
+                <p onclick="calculate('div')">Divide</p>
+                <p onclick="calculate('exp')">Exponential</p>
+
+                <p id="result"></p>
+                <style>
+                    .center {
+                        text-align: center;
+                        width: 45px;
+                        height: 20px;
+                    }
+
+                    .error-1 {
+                        color: red;
+                    }
+                </style>
+
+                <script>
+                    function calculate(type) {
+                        let section2 = document.getElementById('section-2');
+                        console.log('section2', section2.innerHTML)
+                        let x = section2.querySelector('#first-2');
+                        let y = section2.querySelector('#second-2');
+                        let error = false;
+
+                        error = resetError(x, y)
+
+                        if (!error) {
+                            let result = section2.querySelector('#result');
+                            let value = getOutValue(Number(x.value), Number(y.value), type)
+                            result.innerHTML = value;
+                            x.value = "";
+                            y.value = "";
+                        }
+                    }
+
+                    function resetError(x, y) {
+                        let section2 = document.getElementById('section-2');
+                        let error = false;
+                        let errElement = section2.querySelectorAll('.error-1');
+                        for (let item of errElement) {
+                            item.innerHTML = '';
+                        }
+                        if (!x.value) {
+                            error = true;
+                            x.closest('.field-wrap').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
+                        }
+                        if (!y.value) {
+                            error = true;
+                            y.closest('.field-wrap').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
+                        }
+                        return error;
+                    }
+
+                    function getOutValue(val1, val2, type) {
+                        let value = 0;
+                        if (type === 'add') {
+                            value = val1 + val2;
+                        }
+                        else if (type === 'sub') {
+                            value = val1 - val2;
+                        }
+                        else if (type === 'mul') {
+                            value = val1 * val2;
+                        }
+                        else if (type === 'div') {
+                            value = val1 / val2;
+                        }
+                        else if (type === 'exp') {
+                            value = val1 ** val2;
+                        }
+                        return value;
+                    }
+                </script>
+            </div>
+            <div class="code-wrapper">
+                <textarea class="textarea" disabled cols="1" rows="88">
+                    <div class="field-wrap">
+                        <div>Enter the first number =
+                        <input type="number" class="center" id="first-2" placeholder="first" name="first-2"></p>
+                        <span class="error-1"></span>
+                        </div>
+                    </div>
+                    <div class="field-wrap">
+                        <div>Enter the second number =
+                        <input type="number" class="center" id="second-2" placeholder="second" name="second-2"></p>
+                        <span class="error-1"></span>
+                        </div>
+                    </div>
+                        <p onclick="calculate('add')">Add</p>
+                        <p onclick="calculate('sub')">Subtract</p>
+                        <p onclick="calculate('mul')">Multiply</p>
+                        <p onclick="calculate('div')">Divide</p>
+                        <p onclick="calculate('exp')">Exponential</p>
+    
+                        <p id="result"></p>
+                    <style>
+                        .center{
+                            text-align: center;
+                            width: 45px;
+                            height: 20px;
+                        }
+                        .error-1{
+                            color: red;
+                        }
+                    </style>
+    
+                    <script>
+                        function calculate(type) {
+                            let section2 = document.getElementById('section-2');
+                            console.log('section2', section2.innerHTML)
+                            let x = section2.querySelector('#first-2');
+                            let y = section2.querySelector('#second-2');
+                            let error = false;
+
+                            error = resetError(x, y)
+
+                            if (!error) {
+                                let result = section2.querySelector('#result');
+                                let value = getOutValue(Number(x.value), Number(y.value), type)
+                                result.innerHTML = value;
+                                x.value = "";
+                                y.value = "";
+                            }
+                        }
+
+                        function resetError(x, y) {
+                            let section2 = document.getElementById('section-2');
+                            let error = false;
+                            let errElement = section2.querySelectorAll('.error-1');
+                            for (let item of errElement) {
+                                item.innerHTML = '';
+                            }
+                            if (!x.value) {
+                                error = true;
+                                x.closest('.field-wrap').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
+                            }
+                            if (!y.value) {
+                                error = true;
+                                y.closest('.field-wrap').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
+                            }
+                            return error;
+                        }
+
+                        function getOutValue(val1, val2, type) {
+                            let value = 0;
+                            if (type === 'add') {
+                                value = val1 + val2;
+                            }
+                            else if (type === 'sub') {
+                                value = val1 - val2;
+                            }
+                            else if (type === 'mul') {
+                                value = val1 * val2;
+                            }
+                            else if (type === 'div') {
+                                value = val1 / val2;
+                            }
+                            else if (type === 'exp') {
+                                value = val1 ** val2;
+                            }
+                            return value;
+                        }
+                    </script>
+                </textarea>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

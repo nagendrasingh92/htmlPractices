@@ -1,134 +1,65 @@
 .head1 {
-  color: #847272;
-  margin: 0;
-}
+  color: #847272; }
 
-.head1:hover {
-  color: blue;
-}
 .frame {
-  position: relative;
-  height: 3630px;
-  width: 1600px;
-  border: 2px solid red;
-}
-
-.frame .navigation {
-  position: absolute;
-  width: 1193px;
-  height: 59px;
-  left: 177px;
-  top: 41px;
-  border: 2px solid red;
-}
-
-.frame .navigation .pannel {
-  color: #666666;
-  position: absolute;
-  width: 609px;
-  height: 26px;
-  left: 403px;
-  top: 8px;
-  border: 2px solid red;
-}
-
-.frame .navigation .pannel ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-
-.frame .navigation .pannel li a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #666666;
-  font-size: 20px;
-}
-
-.frame .navigation .pannel a:hover {
-  text-decoration-line: underline;
-  text-decoration-color: blue;
-}
-
-.frame .navigation .pannel #home {
- padding-left: 0; 
-}
-
-.frame .navigation .direct-link {
-  position: absolute;
-  width: 130px;
-  height: 32px;
-  left: 1061px;
-  top: 4px;
-  border: 2px solid red;
-}
-
-.frame .navigation .direct-link ul {
+  border: 2px solid red; }
+  .frame .navigation {
+    justify-content: space-between;
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    border: 2px solid red; }
+    .frame .navigation .logo {
+      border: 2px solid red;
+      display: flex;
+      align-items: center; }
+      .frame .navigation .logo .nu7 {
+        color: #00c0fd; }
+      .frame .navigation .logo .pav {
+        color: #00c0fd; }
+    .frame .navigation .link-wrap {
+      display: flex;
+      justify-content: space-between; }
+      .frame .navigation .link-wrap .pannel {
+        color: #666;
+        border: 2px solid red;
+        display: flex;
+        align-items: center; }
+        .frame .navigation .link-wrap .pannel ul {
+          margin: 0px;
+          padding: 0px;
+          list-style-type: none;
+          display: flex; }
+        .frame .navigation .link-wrap .pannel li {
+          padding: 0px 10px; }
+          .frame .navigation .link-wrap .pannel li a {
+            color: #666; }
+      .frame .navigation .link-wrap .direct-link {
+        border: 2px solid red;
+        display: flex;
+        align-items: center; }
+        .frame .navigation .link-wrap .direct-link ul {
+          margin: 0px;
+          padding: 0px;
+          display: flex;
+          list-style-type: none; }
+        .frame .navigation .link-wrap .direct-link li {
+          display: flex;
+          align-items: center;
+          padding: 0px 10px;
+          list-style-type: none; }
+  .frame .midpart {
+    border: 2px solid red; }
+    .frame .midpart .intro {
+      color: #1a23cb; }
 
-.frame .navigation .direct-link li {
-    height: 30px;
-    width: 30px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0 5px;
-}
-
-.frame .navigation .direct-link li:hover {
-background-color: blue;
-border-radius: 70%;
-}
-.frame .navigation .logo {
-  position: absolute;
-  width: 97px;
-  height: 59px;
-  left: -2px;
-  top: -2px;
-  border: 2px solid red;
-  text-align: center;
-}
-
-.frame .navigation .logo .nu7 {
-  margin: auto;
-  color: #00c0fd;
-  font-size: 28px;
-}
-
-.frame .navigation .logo .pav {
-  margin: auto;
-  color: #00c0fd;
-}
-
-.frame .midpart {
-  position: absolute;
-  border: 2px solid red;
-  top: 320px;
-  left: 177px;
-  width: 1204px;
-  height: 350px;
-}
-.frame .midpart .intro {
-  width: 636px;
-  height: 297px;
-  color: #1a23cb;
-}
-
-.frame .midpart .intro p {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 70px;
-  margin: 0 0;
-}
-.frame .midpart .intro p:hover {
-  text-decoration-line: underline;
-  text-decoration-color: blue;
-}
+@media (max-width: 768px) {
+  .frame .navigation .logo {
+    width: 100%; }
+  .frame .navigation .pannel {
+    width: 100%; }
+    .frame .navigation .pannel ul {
+      display: block; }
+  .frame .navigation .direct-link {
+    width: 100%; }
+    .frame .navigation .direct-link ul {
+      display: block;
+      padding: 1px; } }

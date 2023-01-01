@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header1{
+            text-align: center;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid green;
+            background-color: rgb(120, 208, 120);
+        }
+        .test{
+            flex: 1 0 19%;
+            border: 2px solid black;
+            text-align: center;
+            margin: 5px;
+            padding: 20px;
+            background-color: rgb(174, 210, 47);
+            font-size: 40px;
+        }
+        .active{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1 calss="header1">Number game</h1>
+    <div class="main">
+        <div class="test" onclick="move(event)">3</div>
+        <div class="test" onclick="move(event)">5</div>
+        <div class="test" onclick="move(event)">7</div>
+        <div class="test" onclick="move(event)">8</div>
+        <div class="test" onclick="move(event)">12</div>
+        <div class="test" onclick="move(event)">14</div>
+        <div class="test" onclick="move(event)">6</div>
+        <div class="test" onclick="move(event)">1</div>
+        <div class="test" onclick="move(event)">9</div>
+        <div class="test" onclick="move(event)">2</div>
+        <div class="test" onclick="move(event)">4</div>
+        <div class="test" onclick="move(event)">10</div>
+        <div class="test" onclick="move(event)">13</div>
+        <div class="test" onclick="move(event)">11</div>
+        <div class="test" onclick="move(event)">15</div>
+        <div class="test" onclick="move(event)"></div>
+        <div class="count">0</div>
+    </div>
+
+    <script>
+        function move(event){
+            debugger;
+            let data = event.target.innerHTML;
+            let activeEle = document.getElementsByClassName('active');
+            console.log(data)
+            if(!data && activeEle[0].innerHTML){
+                count();
+                let activedata = activeEle[0].innerHTML;
+                activeEle[0].innerHTML = '';
+                activeEle[0].classList.remove("active");
+                event.target.innerHTML = activedata;
+            }
+            else{
+                for(let test of activeEle){
+                    test.classList.remove("active");
+                }
+                event.target.classList.add('active');
+            }
+        }
+        function count(){
+            let steps = document.getElementsByClassName('count')[0];
+            let total = parseInt(steps.innerHTML);
+            steps.innerHTML = total + 1;
+        }
+    </script>
+</body>
+</html>
