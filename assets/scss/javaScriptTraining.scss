@@ -1,0 +1,83 @@
+.section-wrapper {
+    margin: 10px;
+    padding: 10px 0px;
+    background-color: #ddebdc;
+
+
+    .title {
+        padding: 0px 10px;
+    }
+
+    .about {
+        padding: 0px 10px;
+        border: 1px solid #f202da;
+        color: rgb(0, 30, 221);
+    }
+
+    .output-wrapper {
+        padding: 10px 20px;
+        background-color: #a9e0b2;
+
+    }
+
+    .code-wrapper {
+        border: 1px solid #999999;
+        margin: 5px 0;
+        padding: 3px;
+
+        .textarea {
+            width: 99%;
+        }
+    }
+}
+
+.section-1{
+    .center {
+        text-align: center;
+    }
+    .program-1{
+        color: red;
+    }
+}
+
+.section-2{
+    .center {
+        text-align: center;
+    }
+
+    .error-1 {
+        color: red;
+    }
+    .program-2{
+        color: red;
+    }
+}
+
+.section-3{
+    .program-3{
+        color: red;
+    }
+    .output-wrapper{
+        .test{
+            color: red;
+        }
+    }
+}
+
+.section-4{
+    .program-4{
+        color: red;
+    }
+}
+
+.section-5{
+    .program-5{
+        color: red;
+    }
+}
+
+.section-6{
+    .program-6{
+        color: red;
+    }
+}

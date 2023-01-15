@@ -6,50 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .section-wrapper {
-            margin: 10px;
-            padding: 10px 0px;
-            background-color: #ddebdc;
-        }
-
-        .section-wrapper .title {
-            padding: 0px 10px;
-        }
-
-        .section-wrapper .about {
-            padding: 0px 10px;
-            border: 1px solid #f202da;
-            color: rgb(0, 30, 221);
-        }
-
-        .section-wrapper .output-wrapper {
-            padding: 10px 20px;
-            background-color: #a9e0b2;
-
-        }
-
-        .section-wrapper .code-wrapper {
-            border: 1px solid #999999;
-            margin: 5px 0;
-            padding: 3px;
-        }
-
-        .section-wrapper .code-wrapper .textarea {
-            width: 99%;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/javaScriptTraining.css">
 </head>
 
 <body>
     <div class="section-wrapper section-1">
+        <h2 class="program-1">Code-1</h2>
         <p class="title">variables: var, let, const, nothing</p>
         <div>
             <div class="about">
                 <p class="title">var declarations are globally scoped or function scoped while let and const are block
                     scoped.</p>
             </div>
-            <div class="When to use">
+            <div class="details">
                 <p class="title">for general rule use variables with const and if the value of the variable can changed
                     use let.</p>
             </div>
@@ -62,13 +31,6 @@
                 </div>
                 <p onclick="add('data')">Add</p>
                 <p id="result"></p>
-                <style>
-                    .center {
-                        text-align: center;
-                        width: 45px;
-                        height: 20px;
-                    }
-                </style>
 
                 <script>
                     function add(data) {
@@ -80,30 +42,15 @@
                 </script>
             </div>
             <div class="code-wrapper">
-                <textarea class="textarea" disabled cols="1" rows="24">
-                    <div>Enter the first number =
-                        <input class="center" id="first-1" placeholder="first"></p>
-                        </div>
-                        <div>Enter the second number =
-                        <input class="center" id="second-1" placeholder="second"></p>
-                        <p onclick="add('data')">Add</p>
-                        <p id="result"></p>
-                        <style>
-                            .center{
-                                text-align: center;
-                                width: 45px;
-                                height: 20px;
-                            }
-                        </style>
-        
-                        <script>
-                            function add(data) {
-                                const x = document.getElementById('first-1').value;
-                                let y = document.getElementById('second-1').value;
-                                var z = Number(x) + Number(y);
-                                document.getElementById('result').innerHTML = z;
-                            }
-                        </script>
+                <textarea class="textarea" disabled cols="1" rows="9">
+                    <script>
+                        function add(data) {
+                            const x = document.getElementById('first-1').value;
+                            let y = document.getElementById('second-1').value;
+                            var z = Number(x) + Number(y);
+                            document.getElementById('result').innerHTML = z;
+                        }
+                    </script>
             </textarea>
             </div>
         </div>
@@ -112,6 +59,7 @@
     <!-- New code start here-->
 
     <div class="section-wrapper section-2" id="section-2">
+        <h2 class="program-2">Code-2</h2>
         <p class="title">Arithmetic operators :- +, -, *, /, % <br>
             Assignment operators :- =, +=, -=, *=, %=, /=
         </p>
@@ -125,13 +73,13 @@
                     use let.</p>
             </div>
             <div class="output-wrapper">
-                <div class="field-wrap">
+                <div class="field-wrap-1">
                     <div>Enter the first number =
                         <input type="number" class="center" id="first-2" placeholder="first" name="first-2"></p>
                         <span class="error-1"></span>
                     </div>
                 </div>
-                <div class="field-wrap">
+                <div class="field-wrap-2">
                     <div>Enter the second number =
                         <input type="number" class="center" id="second-2" placeholder="second" name="second-2"></p>
                         <span class="error-1"></span>
@@ -144,17 +92,6 @@
                 <p onclick="calculate('exp')">Exponential</p>
 
                 <p id="result"></p>
-                <style>
-                    .center {
-                        text-align: center;
-                        width: 45px;
-                        height: 20px;
-                    }
-
-                    .error-1 {
-                        color: red;
-                    }
-                </style>
 
                 <script>
                     function calculate(type) {
@@ -184,11 +121,11 @@
                         }
                         if (!x.value) {
                             error = true;
-                            x.closest('.field-wrap').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
+                            x.closest('.field-wrap-1').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
                         }
                         if (!y.value) {
                             error = true;
-                            y.closest('.field-wrap').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
+                            y.closest('.field-wrap-2').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
                         }
                         return error;
                     }
@@ -215,37 +152,8 @@
                 </script>
             </div>
             <div class="code-wrapper">
-                <textarea class="textarea" disabled cols="1" rows="88">
-                    <div class="field-wrap">
-                        <div>Enter the first number =
-                        <input type="number" class="center" id="first-2" placeholder="first" name="first-2"></p>
-                        <span class="error-1"></span>
-                        </div>
-                    </div>
-                    <div class="field-wrap">
-                        <div>Enter the second number =
-                        <input type="number" class="center" id="second-2" placeholder="second" name="second-2"></p>
-                        <span class="error-1"></span>
-                        </div>
-                    </div>
-                        <p onclick="calculate('add')">Add</p>
-                        <p onclick="calculate('sub')">Subtract</p>
-                        <p onclick="calculate('mul')">Multiply</p>
-                        <p onclick="calculate('div')">Divide</p>
-                        <p onclick="calculate('exp')">Exponential</p>
-    
-                        <p id="result"></p>
-                    <style>
-                        .center{
-                            text-align: center;
-                            width: 45px;
-                            height: 20px;
-                        }
-                        .error-1{
-                            color: red;
-                        }
-                    </style>
-    
+                <textarea class="textarea" disabled cols="1" rows="59">
+
                     <script>
                         function calculate(type) {
                             let section2 = document.getElementById('section-2');
@@ -274,11 +182,11 @@
                             }
                             if (!x.value) {
                                 error = true;
-                                x.closest('.field-wrap').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
+                                x.closest('.field-wrap-1').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
                             }
                             if (!y.value) {
                                 error = true;
-                                y.closest('.field-wrap').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
+                                y.closest('.field-wrap-2').querySelectorAll('.error-1')[0].innerHTML = 'Please enter the number';
                             }
                             return error;
                         }
@@ -306,7 +214,523 @@
                 </textarea>
             </div>
         </div>
+    </div>
 
+
+    <!-- New code start here-->
+
+    <div class="section-wrapper section-3" id="section-3">
+        <h2 class="program-3">Code-3</h2>
+        <p class="title">Data type :- Number, String, Object, Boolean, Array, Undefined, BigInt, value null</p>
+        <div>
+            <div class="about">
+                <p class="title">JavaScript provides different data types to hold different types of values.
+                    There are two types of data types (1. primitive 2. non-primitive)</p>
+            </div>
+            <!-- <div class="When to use">
+                <p class="title">For general rule use variables with const and if the value of the variable can changed
+                    use let.</p>
+            </div> -->
+            <div class="output-wrapper">
+                <div>
+                    The number is <span class="number test"></span>
+                </div>
+                <div>
+                    The string is <span class="string test"></span>
+                </div>
+                <div>
+                    The object is <span class="object test"></span>
+                </div>
+                <div>
+                    The boolean is <span class="boolean test"></span>
+                </div>
+                <div>
+                    The array is <span class="array test"></span>
+                </div>
+                <div>
+                    The value is <span class="undefined test"></span>
+                </div>
+                <div>
+                    The bigint is <span class="bigint test"></span>
+                </div>
+                <div>
+                    The value-null is <span class="value-null test"></span>
+                </div>
+                <script>
+                    let length = 16;
+                    document.getElementsByClassName("number")[0].innerHTML = length;
+                    let color = "Yellow";
+                    document.getElementsByClassName("string")[0].innerHTML = color;
+                    const person = { firstName: "Harshvardhan", lastName: "singh" };
+                    document.getElementsByClassName("object")[0].innerHTML = person.firstName + " " + person.lastName;
+                    let x = true;
+                    document.getElementsByClassName("boolean")[0].innerHTML = x;
+                    const cars = ["suzuki", "volvo", "tyota"];
+                    document.getElementsByClassName("array")[0].innerHTML = cars + " " + cars[1];
+                    let type;
+                    document.getElementsByClassName("undefined")[0].innerHTML = type;
+                    let y = BigInt("123123123123123123123123123123123123123123");
+                    document.getElementsByClassName("bigint")[0].innerHTML = y;
+                    let value = null;
+                    document.getElementsByClassName("value-null")[0].innerHTML = value;
+                </script>
+            </div>
+            <div class="code-wrapper">
+                <textarea class="textarea" disabled cols="1" rows="19">
+                    <script>
+                        let length = 16;
+                        document.getElementsByClassName("number")[0].innerHTML = length;
+                        let color = "Yellow";
+                        document.getElementsByClassName("string")[0].innerHTML = color;
+                        const person = { firstName: "Harshvardhan", lastName: "singh" };
+                        document.getElementsByClassName("object")[0].innerHTML = person.firstName + " " + person.lastName;
+                        let x = true;
+                        document.getElementsByClassName("boolean")[0].innerHTML = x;
+                        const cars = ["suzuki", "volvo", "tyota"];
+                        document.getElementsByClassName("array")[0].innerHTML = cars + " " + cars[1];
+                        let type;
+                        document.getElementsByClassName("undefined")[0].innerHTML = type;
+                        let y = BigInt("123123123123123123123123123123123123123123");
+                        document.getElementsByClassName("bigint")[0].innerHTML = y;
+                        let value = null;
+                        document.getElementsByClassName("value-null")[0].innerHTML = value;
+                    </script>
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- New code start here-->
+
+    <div class="section-wrapper section-4" id="section-4">
+        <h2 class="program-4">Code-4</h2>
+        <p class="title">function :- function declaration, function expression, shorthand method, arrow function,
+            generator function, function constructor.
+        </p>
+        <div>
+            <div class="about">
+                <p class="title">A JavaScript function is a block of code designed to perform a particular task.</p>
+            </div>
+            <!-- <div class="When to use">
+                <p class="title">For general rule use variables with const and if the value of the variable can changed
+                    use let.</p>
+            </div> -->
+            <div class="output-wrapper">
+                <div>
+                    The number is <span class="number test"></span>
+                </div>
+                <div>
+                    The string is <span class="string test"></span>
+                </div>
+                <div>
+                    The object is <span class="object test"></span>
+                </div>
+                <div>
+                    The boolean is <span class="boolean test"></span>
+                </div>
+                <div>
+                    The array is <span class="array test"></span>
+                </div>
+                <div>
+                    The value is <span class="undefined test"></span>
+                </div>
+                <div>
+                    The bigint is <span class="bigint test"></span>
+                </div>
+                <div>
+                    The value-null is <span class="value-null test"></span>
+                </div>
+                <script>
+                    {
+                    let lengtha = 16;
+                    document.getElementsByClassName("number")[0].innerHTML = lengtha;
+                    let color = "Yellow";
+                    document.getElementsByClassName("string")[0].innerHTML = color;
+                    const person = { firstName: "Harshvardhan", lastName: "singh" };
+                    document.getElementsByClassName("object")[0].innerHTML = person.firstName + " " + person.lastName;
+                    let x = true;
+                    document.getElementsByClassName("boolean")[0].innerHTML = x;
+                    const cars = ["suzuki", "volvo", "tyota"];
+                    document.getElementsByClassName("array")[0].innerHTML = cars + " " + cars[1];
+                    let type;
+                    document.getElementsByClassName("undefined")[0].innerHTML = type;
+                    let y = BigInt("123123123123123123123123123123123123123123");
+                    document.getElementsByClassName("bigint")[0].innerHTML = y;
+                    let value = null;
+                    document.getElementsByClassName("value-null")[0].innerHTML = value;
+                    }
+                </script>
+            </div>
+            <div class="code-wrapper">
+                <textarea class="textarea" disabled cols="1" rows="19">
+                    <script>
+                        let lengtha = 16;
+                        document.getElementsByClassName("number")[0].innerHTML = lengtha;
+                        let color = "Yellow";
+                        document.getElementsByClassName("string")[0].innerHTML = color;
+                        const person = { firstName: "Harshvardhan", lastName: "singh" };
+                        document.getElementsByClassName("object")[0].innerHTML = person.firstName + " " + person.lastName;
+                        let x = true;
+                        document.getElementsByClassName("boolean")[0].innerHTML = x;
+                        const cars = ["suzuki", "volvo", "tyota"];
+                        document.getElementsByClassName("array")[0].innerHTML = cars + " " + cars[1];
+                        let type;
+                        document.getElementsByClassName("undefined")[0].innerHTML = type;
+                        let y = BigInt("123123123123123123123123123123123123123123");
+                        document.getElementsByClassName("bigint")[0].innerHTML = y;
+                        let value = null;
+                        document.getElementsByClassName("value-null")[0].innerHTML = value;
+                    </script>
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- New code start here-->
+
+    <div class="section-wrapper section-5" id="section-5">
+        <h2 class="program-5">Code-5</h2>
+        <p class="title">switch :- switch statement to select one of many code blocks to be executed.
+        </p>
+        <div>
+            <div class="about">
+                <p class="title"></p>
+            </div>
+            <!-- <div class="When to use">
+                <p class="title">For general rule use variables with const and if the value of the variable can changed
+                    use let.</p>
+            </div> -->
+            <div class="output-wrapper">
+                <input type="text" class="change" placeholder="type here" name="change">
+                <div>
+                    <button class="convert" data-type="upperCase">upperCase</button>
+                    <button class="convert" data-type="lowerCase">lowerCase</button>
+                    <button class="convert" data-type="trim">trim</button>
+                    <button class="convert" data-type="replace">replace</button>
+                    <button class="convert" data-type="charAt">characterAt</button>
+                    <button class="convert" data-type="capitalize">capitalize</button>
+                    <button class="convert" data-type="reverse">reverse</button>
+                    <button class="convert" data-type="concat">concat</button>
+                </div>
+                <div class="result">
+
+                </div>
+                <script>
+                    let buttons = document.getElementsByClassName("convert");
+                    for (let button of buttons) {
+                        button.addEventListener("click", function () {
+                            convert(button.dataset.type)
+                        })
+                    }
+                    function convert(type) {
+                        debugger;
+                        let test = document.getElementsByClassName("change")[0].value;
+                        let output = document.getElementsByClassName("result")[0];
+                        let converted;
+                        switch (type) {
+                            case 'upperCase': {
+                                converted = test.toUpperCase();
+                                break;
+                            }
+                            case 'lowerCase': {
+                                converted = test.toLowerCase();
+                                break;
+                            }
+                            case 'trim': {
+                                converted = test.trim();
+                                break;
+                            }
+                            case 'replace': {
+                                converted = test.replace(test, "new word");
+                                break;
+                            }
+                            case 'charAt': {
+                                converted = test.charAt(parseFloat(prompt('Character number') - 1));
+                                break;
+                            }
+                            case 'capitalize': {
+                                converted = test.charAt(0).toUpperCase() + test.slice(1).toLowerCase();
+                                break;
+                            }
+                            case 'reverse': {
+                                let newString = "";
+                                for (let i = test.length - 1; i >= 0; i--) {
+                                    newString += test[i];
+                                }
+                                converted = newString;
+                                break;
+                            }
+                            case 'concat': {
+                                let s = "Mr.";
+                                converted = s.concat(test);
+                                break;
+                            }
+                            default: {
+                                break;
+                            }
+                        }
+                        output.innerHTML = converted;
+                    }
+                </script>
+            </div>
+            <div class="code-wrapper">
+                <textarea class="textarea" disabled cols="1" rows="60">
+                    <script>
+                        let buttons = document.getElementsByClassName("convert");
+                        for (let button of buttons) {
+                            button.addEventListener("click", function () {
+                                convert(button.dataset.type)
+                            })
+                        }
+                        function convert(type) {
+                            debugger;
+                            let test = document.getElementsByClassName("change")[0].value;
+                            let output = document.getElementsByClassName("result")[0];
+                            let converted;
+                            switch (type) {
+                                case 'upperCase': {
+                                    converted = test.toUpperCase();
+                                    break;
+                                }
+                                case 'lowerCase': {
+                                    converted = test.toLowerCase();
+                                    break;
+                                }
+                                case 'trim': {
+                                    converted = test.trim();
+                                    break;
+                                }
+                                case 'replace': {
+                                    converted = test.replace(test, "new word");
+                                    break;
+                                }
+                                case 'charAt': {
+                                    converted = test.charAt(parseFloat(prompt('Character number') - 1));
+                                    break;
+                                }
+                                case 'capitalize': {
+                                    converted = test.charAt(0).toUpperCase() + test.slice(1).toLowerCase();
+                                    break;
+                                }
+                                case 'reverse': {
+                                    let newString = "";
+                                    for (let i = test.length - 1; i >= 0; i--) {
+                                        newString += test[i];
+                                    }
+                                    converted = newString;
+                                    break;
+                                }
+                                case 'concat': {
+                                    let s = "Mr.";
+                                    converted = s.concat(test);
+                                    break;
+                                }
+                                default: {
+                                    break;
+                                }
+                            }
+                            output.innerHTML = converted;
+                        }
+                    </script>
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- New code start here-->
+
+    <div class="section-wrapper section-6" id="section-6">
+        <h2 class="program-6">Code-6</h2>
+        <p class="title">Array :- arrays are used to store multiply values in a single variable.
+        </p>
+        <div>
+            <div class="about"> Each item in an array jas a number attached to it, called a numeric index, that allows you to access it.
+                <p class="title"></p>
+            </div>
+            <!-- <div class="When to use">
+                <p class="title">For general rule use variables with const and if the value of the variable can changed
+                    use let.</p>
+            </div> -->
+            <div class="output-wrapper">
+               <p>Looping Array Elements</p>
+                <div onclick="loop()">type 1
+                </div>
+                <div onclick="loop2()">type 2
+                </div>
+                <div class="fruitList">
+                </div>
+                <div onclick="loopArray()">Array methods</div>
+                <div class="methods">
+                    <span class="original"></span><br>
+                    <span class="push1"></span><br>
+                    <span class="length1"></span><br>
+                    <span class="pop1"></span><br>
+                    <span class="join1"></span><br>
+                    <span class="shift1"></span><br>
+                    <span class="unshift1"></span><br>
+                    <span class="change1"></span><br>
+                    <span class="concat1"></span><br>
+                    <span class="splice1"></span><br>
+                    <span class="sort1"></span><br>
+                    <span class="reverse"></span><br>
+                    <span class="random"></span><br>
+                    <span class="function1"></span><br>
+
+                </div>
+                <script>
+                    function loop(){
+                        debugger;
+                        let text = "<ul>";
+                        let k = parseFloat(prompt('Enter number of fruits'));
+                        const fruits = [];
+                        for (let i = 0; i < k; i++){
+                            fruits[i] = prompt('Enter fruit name');
+                        }
+                        let flen = fruits.length;
+                        for (let i = 0; i < flen; i++){
+                            text += "<li>" + fruits[i] + "</li>";
+                        }
+                        text += "</ul>";
+                        document.getElementsByClassName("fruitList")[0].style.border = "2px solid red";
+                        document.getElementsByClassName("fruitList")[0].innerHTML = text;
+                    }
+                    function loop2(){
+                        let k = parseFloat(prompt('Enter number of fruits'));
+                        const fruits = [];
+                        for (let i = 0; i < k; i++){
+                            fruits[i] = prompt('Enter fruit name');
+                        }
+                        let text = "<ul>";
+                        fruits.forEach(myFunction);
+                        text += "</ul>";
+                        document.getElementsByClassName("fruitList")[0].style.border = "2px solid red";
+                        document.getElementsByClassName("fruitList")[0].innerHTML = text;
+
+                        function myFunction(value) {
+                            text += "<li>" + value + "</li>";
+                        }
+                    }
+                    // function arrayMethods() {
+                    //     debugger;
+                    //     const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    //     document.getElementsByClassName("methods")[0].style.border = "2px solid red";
+                    //     document.getElementsByClassName("original")[0].innerHTML = "Array :-" + fruits;
+                    //     fruits.push("Chips");
+                    //     document.getElementsByClassName("push1")[0].innerHTML = "New word added by push :-" + fruits;
+                    //     fruits[fruits.length] = "namkin";
+                    //     document.getElementsByClassName("length1")[0].innerHTML = "New word added by .length :-" + fruits;
+                    //     fruits.pop();
+                    //     document.getElementsByClassName("pop1")[0].innerHTML = "Last word removed by pop:-" + fruits;
+                    //     document.getElementsByClassName("join1")[0].innerHTML = "Symbol added by join:-" + fruits.join("-");
+                    //     fruits.shift();
+                    //     document.getElementsByClassName("shift1")[0].innerHTML = "First word removed by shift:-" + fruits;
+                    //     fruits.unshift("Lemon");
+                    //     document.getElementsByClassName("unshift1")[0].innerHTML = "First word added by unshift:-" + fruits;
+                    //     fruits[2] = "kiwi";
+                    //     document.getElementsByClassName("change1")[0].innerHTML = "Third word is replaced by index number:-" + fruits;
+                    //     const coldDrinks = ["Fruity", "Thumbsup", "Limka"];
+                    //     document.getElementsByClassName("concat1")[0].innerHTML = "Two strings merged with concat:-" + coldDrinks.concat(fruits);
+                    //     fruits.splice(2, 2, "Hathi", "Parrot");
+                    //     document.getElementsByClassName("splice1")[0].innerHTML = "Two wrods replaced by two words:-" + fruits;
+                    //     fruits.sort();
+                    //     document.getElementsByClassName("sort1")[0].innerHTML = "Arrange array in albhabet order:-" + fruits;
+                    // }
+
+                    function loopArray(){
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                        debugger;
+                        let className = ["original", "push1", "length1", "pop1", "join1", "shift1", "unshift1", "change1", "concat1", "splice1", "sort1", "reverse", "random", "function1"]
+                        let comment = ["Array :-", "New word added by push :-", "New word added by .length :-", "Last word removed by pop:-", "Symbol added by join:-", "First word removed by shift:-", "First word added by unshift:-", "Third word is replaced by index number:-", "Two strings merged with concat:-", "Two wrods replaced by two words:-", "Arrange array in albhabet order:-", "Reversed the array :-", "Random the numbers", "Add a value to each word :-"]
+                        for(let i=0; i<14; i++){
+                            switch (i) {
+                                case 0: {
+                                    break;
+                                }
+                                case 1: {
+                                    fruits.push("Chips");
+                                    break;
+                                }
+                                case 2: {
+                                    fruits[fruits.length] = "namkin";
+                                    break;
+                                }
+                                case 3: {
+                                    fruits.pop();
+                                    break;
+                                }
+                                case 4: {
+                                    fruits.join("-");
+                                    break;
+                                }
+                                case 5: {
+                                    fruits.shift();
+                                    break;
+                                }
+                                case 6: {
+                                    fruits.unshift("Lemon");
+                                    break;
+                                }
+                                case 7: {
+                                    fruits[2] = "kiwi";
+                                    break;
+                                }
+                                case 8: {
+                                    const coldDrinks = ["Fruity", "Thumbsup", "Limka"];
+                                    coldDrinks.concat(fruits);
+                                    break;
+                                }
+                                case 9: {
+                                    fruits.splice(2, 2, "Hathi", "Parrot");
+                                    break;
+                                }
+                                case 10: {
+                                    fruits.sort();
+                                    break;
+                                }
+                                case 11: {
+                                    fruits.reverse();
+                                    break;
+                                }
+                                case 12: {
+                                    fruits.sort(function(){return 0.5 - Math.random()});
+                                    break;
+                                }
+                                case 13: {
+                                    fruits.map(myFunction);
+                                    function myFunction(value, index, array){
+                                        return value + "1";
+                                    }
+                                    break;
+                                }
+                            }
+                            document.getElementsByClassName(className[i])[0].innerHTML = comment[i] + " " + fruits;
+                        }
+                    }
+                </script>
+            </div>
+            <div class="code-wrapper">
+                <textarea class="textarea" disabled cols="1" rows="19">
+                    <script>
+                        let length = 16;
+                        document.getElementsByClassName("number")[0].innerHTML = length;
+                        let color = "Yellow";
+                        document.getElementsByClassName("string")[0].innerHTML = color;
+                        const person = { firstName: "Harshvardhan", lastName: "singh" };
+                        document.getElementsByClassName("object")[0].innerHTML = person.firstName + " " + person.lastName;
+                        let x = true;
+                        document.getElementsByClassName("boolean")[0].innerHTML = x;
+                        const cars = ["suzuki", "volvo", "tyota"];
+                        document.getElementsByClassName("array")[0].innerHTML = cars + " " + cars[1];
+                        let type;
+                        document.getElementsByClassName("undefined")[0].innerHTML = type;
+                        let y = BigInt("123123123123123123123123123123123123123123");
+                        document.getElementsByClassName("bigint")[0].innerHTML = y;
+                        let value = null;
+                        document.getElementsByClassName("value-null")[0].innerHTML = value;
+                    </script>
+                </textarea>
+            </div>
+        </div>
     </div>
 </body>
 
