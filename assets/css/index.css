@@ -1,0 +1,165 @@
+.pageWrap {
+  margin: 50px; }
+  .pageWrap .sectionOne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    position: relative; }
+    .pageWrap .sectionOne .logo {
+      color: #666666;
+      font-size: 20px;
+      padding: 0 100px;
+      font-weight: bold; }
+    .pageWrap .sectionOne .menu {
+      display: none; }
+    .pageWrap .sectionOne .linkWrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-right: 20px; }
+      .pageWrap .sectionOne .linkWrap .pannel ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap; }
+        .pageWrap .sectionOne .linkWrap .pannel ul li {
+          margin: 0px 2rem;
+          display: inline-block; }
+          .pageWrap .sectionOne .linkWrap .pannel ul li a {
+            box-sizing: border-box;
+            text-decoration: none;
+            color: #666666;
+            font-size: 1rem;
+            font-family: sans-serif;
+            text-transform: uppercase; }
+          .pageWrap .sectionOne .linkWrap .pannel ul li a:hover {
+            background: #13B0F5; }
+      .pageWrap .sectionOne .linkWrap .directLink {
+        font-size: 1.7em;
+        display: flex; }
+        .pageWrap .sectionOne .linkWrap .directLink i {
+          color: #666666;
+          margin: 0 0.5rem; }
+    @media (max-width: 768px) {
+      .pageWrap .sectionOne .menu {
+        display: block; }
+      .pageWrap .sectionOne .linkWrap {
+        display: none;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        top: 60px;
+        width: revert;
+        background: gray;
+        margin: 0; }
+        .pageWrap .sectionOne .linkWrap .pannel ul {
+          flex-direction: column; }
+          .pageWrap .sectionOne .linkWrap .pannel ul li a {
+            color: #fff; } }
+  .pageWrap .sectionTwo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40vw; }
+    .pageWrap .sectionTwo .intro {
+      font-size: 2.5rem;
+      margin-left: 10%; }
+      .pageWrap .sectionTwo .intro .name {
+        background: linear-gradient(to right, #13B0F5 0%, #E70FAA 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    .pageWrap .sectionTwo .developerImage {
+      margin-right: 20%; }
+      .pageWrap .sectionTwo .developerImage img {
+        border-radius: 50%; }
+  .pageWrap .sectionThree {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    .pageWrap .sectionThree .sectionThreeLogo {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      .pageWrap .sectionThree .sectionThreeLogo img {
+        padding: 4%;
+        max-width: 120px; }
+      .pageWrap .sectionThree .sectionThreeLogo .sectionThreeHead img {
+        width: 6rem;
+        margin: 4rem; }
+  .pageWrap .sectionFour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vw 0; }
+    .pageWrap .sectionFour .sectionFourCardWrap {
+      display: flex;
+      flex-wrap: wrap; }
+      .pageWrap .sectionFour .sectionFourCardWrap .colWrap {
+        padding: 2vw;
+        width: 26vw; }
+        .pageWrap .sectionFour .sectionFourCardWrap .colWrap .cardBorder {
+          display: flex;
+          flex-direction: column;
+          border: 2px solid red;
+          border-radius: 10px;
+          overflow: hidden; }
+          .pageWrap .sectionFour .sectionFourCardWrap .colWrap .cardBorder .cardImage {
+            width: 100%; }
+            .pageWrap .sectionFour .sectionFourCardWrap .colWrap .cardBorder .cardImage img {
+              width: 100%;
+              height: 16vw; }
+          .pageWrap .sectionFour .sectionFourCardWrap .colWrap .cardBorder .cardContent {
+            padding: 20px; }
+            .pageWrap .sectionFour .sectionFourCardWrap .colWrap .cardBorder .cardContent .cardHeader {
+              font-size: 20px;
+              font-weight: bold; }
+            .pageWrap .sectionFour .sectionFourCardWrap .colWrap .cardBorder .cardContent .operation {
+              padding: 10px 0;
+              text-overflow: ellipsis;
+              height: 3em; }
+          .pageWrap .sectionFour .sectionFourCardWrap .colWrap .cardBorder .cardFooter {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px; }
+
+.sectionHead {
+  font-size: 28px;
+  color: #42466E;
+  font-weight: bold; }
+
+.sectionFive .contactDetails {
+  display: flex;
+  padding: 3vw 0;
+  border-bottom: 2px solid grey;
+  justify-content: flex-end; }
+  .sectionFive .contactDetails .contact {
+    padding-left: 20px; }
+
+.sectionFive .footerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 0; }
+  .sectionFive .footerWrap .footerLinks ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    .sectionFive .footerWrap .footerLinks ul li {
+      margin: 0px 2rem;
+      display: inline-block; }
+      .sectionFive .footerWrap .footerLinks ul li a {
+        box-sizing: border-box;
+        text-decoration: none;
+        color: #666666;
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-transform: uppercase; }
+      .sectionFive .footerWrap .footerLinks ul li a:hover {
+        background: #13B0F5; }

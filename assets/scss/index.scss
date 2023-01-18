@@ -1,0 +1,245 @@
+.pageWrap {
+    margin: 50px;
+
+    .sectionOne {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        position: relative;
+
+        .logo {
+            color: #666666;
+            font-size: 20px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .linkWrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-right: 20px;
+
+            .pannel {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        margin: 0px 2rem;
+                        display: inline-block;
+
+                        a {
+                            box-sizing: border-box;
+                            text-decoration: none;
+                            color: #666666;
+                            font-size: 1rem;
+                            font-family: sans-serif;
+                            text-transform: uppercase;
+                        }
+
+                        a:hover {
+                            background: #13B0F5;
+                        }
+                    }
+                }
+            }
+
+            .directLink {
+                font-size: 1.7em;
+                display: flex;
+
+                i {
+                    color: #666666;
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+
+        @media(max-width: 768px) {
+            .menu {
+                display: block;
+            }
+
+            .linkWrap {
+                display: none;
+                width: 100%;
+                left: 0px;
+                right: 0px;
+                position: absolute;
+                top: 60px;
+                width: revert;
+                background: gray;
+                margin: 0;
+
+                .pannel ul {
+                    flex-direction: column;
+                    ;
+
+                    li a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .sectionTwo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40vw;
+        .intro {
+            font-size: 2.5rem;
+            margin-left: 10%;
+
+            .name {
+                background: linear-gradient(to right, #13B0F5 0%, #E70FAA 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .developerImage {
+            margin-right: 20%;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .sectionThree {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .sectionThreeLogo {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                padding: 4%;
+                max-width: 120px;
+            }
+
+            .sectionThreeHead img {
+                width: 6rem;
+                margin: 4rem;
+            }
+        }
+    }
+
+    .sectionFour {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10vw 0;
+
+        .sectionFourCardWrap {
+            display: flex;
+            flex-wrap: wrap;
+            .colWrap {
+                padding: 2vw;
+                width: 26vw;
+                .cardBorder {
+                    display: flex;
+                    flex-direction: column;
+                    border: 2px solid red;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    .cardImage {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 16vw;
+                        }
+                    }
+                    .cardContent{
+                        padding: 20px;
+                        .cardHeader{
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        .operation{
+                            padding: 10px 0;
+                            text-overflow: ellipsis;
+                            height: 3em;
+                        }
+                    }
+                    .cardFooter{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 20px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+.sectionHead {
+    font-size: 28px;
+    color: #42466E;
+    font-weight: bold;
+}
+
+.sectionFive{
+    .contactDetails{
+        display: flex;
+        padding: 3vw 0;
+        border-bottom: 2px solid grey;
+        justify-content: flex-end;
+        .contact{
+            padding-left: 20px;
+        }
+    }
+    .footerWrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw 0;
+        .footerLinks{
+            ul {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    margin: 0px 2rem;
+                    display: inline-block;
+
+                    a {
+                        box-sizing: border-box;
+                        text-decoration: none;
+                        color: #666666;
+                        font-size: 1rem;
+                        font-family: sans-serif;
+                        text-transform: uppercase;
+                    }
+
+                    a:hover {
+                        background: #13B0F5;
+                    }
+                }
+            }
+        }
+    }
+
+}

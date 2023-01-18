@@ -1,78 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/portfolio.css" />
-  </head>
-  <body>
-    <p class="head1">Desctop-Light Mode</p>
-    <div class="frame">
-      
-      <div class="navigation">
-        
-        <div class="logo">
-          <div>
-            <div class="nu7">{007}</div>
-            <div class="pav">pavanmg</div>
-          </div>
-        </div>
-        <div class="link-wrap">
-          <div class="pannel">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#tech-stack">Tech Stack</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
 
-          <div class="direct-link">
-            <ul>
-              <li><img src="./assets/image/github.svg" alt="github"></li>
-              <li><img src="./assets/image/linkedin.svg" alt="linkedin"></li>
-              <li><img src="./assets/image/twitter.svg" alt="twitter"></li>
-            </ul>
-          </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Index</title>
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="/assets/javaScript/index.js"></script>
 
+</head>
+
+<body>
+  <div class="pageWrap">
+    <div class="sectionOne">
+      <div class="logo">
+        LogoDesign
       </div>
-
-      <div class="midpart">
-        <div class="intro">
-          <p>Hi👋,<br>
-          My name is <br>
-          Pavan MG <br>
-          I build things for web</p>
-        </div>
-
-      </div>
-    </div>
-    <div class="navbar-wrapper">
-      <div class="logo-wrap">
-        <img src="./assets/image/logo.png" alt="logo" />
-      </div>
-      <div class="link-wrap">
-        <div class="page-links">
+      <div class="linkWrap">
+        <div class="pannel">
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#tech-stack">Tech Stack</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="icon-wrap">
-          <ul>
-            <li><img src="./assets/image/github.svg" alt="" /></li>
-            <li><img src="./assets/image/linkedin.svg" alt="" /></li>
-            <li><img src="./assets/image/twitter.svg" alt="" /></li>
-          </ul>
+        <div class="directLink">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-solid fa-circle-half-stroke" onclick=""></i>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="fas fa-bars menuTrigger"></div>
+      </div>
+    </div>
+    
+    <div class="sectionTwo">
+      <div class="intro">
+        Hi👋,<br>
+        My name is <br>
+        <span class="name">Nagendra Singh Chauhan</span><br>
+        I am a web developer.
+      </div>
+      <div class="developerImage">
+        <img src="/assets/image/developer.jpg" alt="developer" widht="100rem" height="100rem">
+      </div>
+    </div>
+    <div class="sectionThree">
+      <div class="sectionHead">
+        My Tech Stack
+      </div><br>
+      <div class="sectionThreeDescription">
+        Technologies I've been working with recently.
+      </div>
+      <div class="sectionThreeLogo">
+        <img src="/assets/image/vscodeIcon.svg" alt="Vs Code">
+        <img src="/assets/image/htmlIcon.svg" alt="Html">
+        <img src="/assets/image/sassIcon.svg" alt="Sass">
+        <img src="/assets/image/cssIcon.svg" alt="Css">
+        <img src="/assets/image/bootstrapIcon.svg" alt="BootStrap">
+        <img src="/assets/image/githubIcon.svg" alt="Git Hub">
+        <img src="/assets/image/gitIcon.svg" alt="Git">
+        <img src="/assets/image/jsOfficialIcon.svg" alt="JavaScript">
+        <img src="/assets/image/reactIcon.svg" alt="react">
+      </div>
+    </div>
+
+    <div class="sectionFour">
+      <div class="sectionFourTitleWrap">
+        <div class="sectionHead">
+          Projects
+        </div>
+        <div class="sectionFourDescription">
+        </div>
+      </div>
+      <div class="sectionFourCardWrap">
+        <div class="colWrap">
+          <div class="cardBorder">
+            <div class="cardImage">
+              <img src="/assets/image/calculator.jpg" alt="Todo List">
+            </div>
+            <div class="cardContent">
+              <div class="cardHeader">Calculator</div>
+              <div class="operation">Operation:- Add, Subtract, Multiply, Divide</div>
+              <div><span>Tech Stack</span>"html, css, javaScript"</div>
+            </div>
+            <div class="cardFooter">
+              <a href=""><i class="fa-solid fa-link"></i>Live Priview</a>
+              <a href=""><i class="fa-brands fa-github"></i>View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="colWrap">
+          <div class="cardBorder">
+            <div class="cardImage">
+              <img src="/assets/image/NumberGame.jpg" alt="Number Game">
+            </div>
+            <div class="cardContent">
+              <div class="cardHeader">Number game</div>
+              <div class="operation">Operation:- Arrange numbers from 1 to 15.</div>
+              <div><span>Tech Stack</span>"html, css javaScript"</div>
+            </div>
+            <div class="cardFooter">
+              <a href=""><i class="fa-solid fa-link"></i>Live Priview</a>
+              <a href=""><i class="fa-brands fa-github"></i>View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="colWrap">
+          <div class="cardBorder">
+            <div class="cardImage">
+              <img src="/assets/image/todoList.jpg" alt="">
+            </div>
+            <div class="cardContent">
+              <div class="cardHeader">To-do Lists</div>
+              <div class="operation">Operation:-Add, Delete, Edit task.</div>
+              <div><span>Tech Stack</span>"html, css javaScript"</div>
+            </div>
+            <div class="cardFooter">
+              <a href=""><i class="fa-solid fa-link"></i>Live Priview</a>
+              <a href=""><i class="fa-brands fa-github"></i>View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="colWrap">
+          <div class="cardBorder">
+            <div class="cardImage">
+              <img src="/assets/image/weatherUpdate.jpg" alt="">
+            </div>
+            <div class="cardContent">
+              <div class="cardHeader">Wheather find</div>
+              <div class="operation">Operation:- Display temperature, description, humidity, wind speed.</div>
+              <div><span>Tech Stack</span>"html, css javaScript"</div>
+            </div>
+            <div class="cardFooter">
+              <a href=""><i class="fa-solid fa-link"></i>Live Priview</a>
+              <a href=""><i class="fa-brands fa-github"></i>View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="colWrap">
+          <div class="cardBorder">
+            <div class="cardImage">
+              <img src="/assets/image/findString.jpg" alt="">
+            </div>
+            <div class="cardContent">
+              <div class="cardHeader">Array of objects</div>
+              <div class="operation">Operation:- Fetch Data table from APIs and place a search box.</div>
+              <div><span>Tech Stack</span>"html, css javaScript"</div>
+            </div>
+            <div class="cardFooter">
+              <a href=""><i class="fa-solid fa-link"></i>Live Priview</a>
+              <a href=""><i class="fa-brands fa-github"></i>View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="colWrap">
+          <div class="cardBorder">
+            <div class="cardImage">
+              <img src="/assets/image/productPage.jpg" alt="">
+            </div>
+            <div class="cardContent">
+              <div class="cardHeader">Product page</div>
+              <div class="operation">Operation:- Add product to wishList.</div>
+              <div><span>Tech Stack</span>"html, css javaScript"</div>
+            </div>
+            <div class="cardFooter">
+              <a href=""><i class="fa-solid fa-link"></i>Live Priview</a>
+              <a href=""><i class="fa-brands fa-github"></i>View Code</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+    <div class="sectionFive">
+      <div class="contactDetails">
+        <div class="contact">
+          +91 7737957798
+        </div>
+        <div class="contact">
+          nagendra.chauhan2001@gmail.com
+        </div>
+        <div class="contact">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-solid fa-circle-half-stroke" onclick=""></i>
+        </div>
+      </div>
+      <div class="footerWrap">
+        <div class="footerLinks">
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footerContent">
+          Designed and built by Nagendra Singh Chauhan.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
