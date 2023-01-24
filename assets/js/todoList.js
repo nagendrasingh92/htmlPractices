@@ -1,11 +1,11 @@
 window.onload = (event) => {
   init()
 };
+let tableStorage = [];
 
 function init() {
   let inputClick = document.getElementsByClassName('inputBttn')[0];
   inputClick.addEventListener("click", function () { addTask() });
-  var tableStorage = [];
 
   document.getElementById('searchBtn').addEventListener("click", function (event) {
     searchTask(event);
