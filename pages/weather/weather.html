@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="body">
+    <div class="container">
+      <form id="input">
+        <input type="text" id="city" placeholder="Enter City Name">
+        <input type="submit" value="Get Updates">
+      </form>
+      <div id="weatherContainer">
+        <div>City Name :- <span id="cityName"></span></div>
+        <div>Temperature :- <span id="temp">°C</span></div>
+        <div>Description :- <span id="description"></span></div>
+        <div> Humidity :- <span id="humidity"></span></div>
+        <div> wind :- <span id="wind"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const inputEle = document.querySelector("#input");
+    const cityEle = document.querySelector("#city");
+    const cityNameEle = document.querySelector("#cityName");
+    const tempEle = document.querySelector("#temp");
+    const descriptionEle = document.querySelector("#description");
+    const humidityEle = document.querySelector("#humidity");
+    const windEle = document.querySelector("#wind");
+
+    inputEle.onsubmit = (e) => {
+      e.preventDefault();
+      weatherUpdate(city.value);
+      city.value = "";
+    };
+
+    weatherUpdate = (city) => {
+      const xhr = new XMLHttpRequest();
+      xhr.open(
+        "GET",
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=70796e6346b6279389b2c9bb362df985`);
+      xhr.send();
+      xhr.onload = () => {
+        if (xhr.status === 404) {
+          alert("Place not found");
+        } else {
+          var data = JSON.parse(xhr.response);
+          cityNameEle.innerHTML = data.name;
+          tempEle.innerHTML = `${Math.round(data.main.temp - 273.15)}°C`;
+          descriptionEle.innerHTML = data.weather[0].description;
+          humidityEle.innerHTML = data.main.humidity;
+          windEle.innerHTML = `${data.wind.speed} km/h`;
+
+
+        }
+      };
+    };
+
+    weatherUpdate('patna');
+  </script>
+</body>
+
+</html>

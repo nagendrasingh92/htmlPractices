@@ -1,0 +1,62 @@
+.pageHead {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1%; }
+  
+  .productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%; }
+    .productContainer .productBorder {
+      border: 2px solid grey;
+      flex: 1 0 25%;
+      margin: 1%;
+      padding: 1%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      box-shadow: 1px 3px 15px #f9eded; }
+      .productContainer .productBorder .cardHeaderWrap .productImage {
+        text-align: center; }
+        .productContainer .productBorder .cardHeaderWrap .productImage img {
+          max-width: 60%; }
+      .productContainer .productBorder .cardContentWrap .productName {
+        font-size: 19px;
+        font-weight: bold;
+        padding: 10px 0; }
+      .productContainer .productBorder .moreInformationWrap {
+        min-height: 100px; }
+        .productContainer .productBorder .moreInformationWrap .moreInformation {
+          color: #089fa7; }
+      .productContainer .productBorder .cardFooterWrap .price .oldPrice {
+        text-decoration: line-through;
+        color: red; }
+      .productContainer .productBorder .cardFooterWrap .addListWrap {
+        text-align: right;
+        padding: 3% 2%; }
+        .productContainer .productBorder .cardFooterWrap .addListWrap .addList {
+          background-color: black;
+          color: white;
+          padding: 2%;
+          border-radius: 10%; }
+        .productContainer .productBorder .cardFooterWrap .addListWrap .addList:hover {
+          border-radius: 15%;
+          border: 3px solid grey; }
+  
+  .wishListWraper .wishList {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px; }
+  
+  .wishListWraper ul.productSelected {
+    display: inline-block;
+    text-align: left; }
+    .wishListWraper ul.productSelected .listBorder .remove {
+      color: red; }
+  
+  .totalWraper {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px; }
+  

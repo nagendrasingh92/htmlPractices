@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+
+<body>
+
+  <div class="field-wrap">
+    <input type="number" id="first" placeholder="Enter number" name="first" required="required">
+    <span class="error"></span>
+  </div>
+  <!-- <p id="e1"></p> -->
+
+  <div class="field-wrap">
+    <input type="number" id="second" placeholder="Enter number" name="second" required="required">
+    <span class="error"></span>
+  </div>
+
+  <!-- <p id="e2"></p> -->
+
+  <div onclick="calculate('add')">Add</div>
+  <div onclick="calculate('sub')">Subtract</div>
+  <div onclick="calculate('mul')">Multiply</div>
+  <div onclick="calculate('div')">Divide</div>
+
+  <div id="output"></div>
+  <!--<div id="Error1"> 
+    <div id="first-error">Please enter the first number</div>
+    <div id="second-error">Please enter the second number</div>
+  </div>-->
+
+  <script>
+
+    function calculate(type) {
+
+      debugger;
+      let x = document.getElementById('first');
+      let y = document.getElementById('second');
+      let error = false;
+
+      error = resetError(x, y)
+
+      if (!error) {
+        let output = document.getElementById('output');
+        let value = getOutValue(Number(x.value), Number(y.value), type)
+        output.innerHTML = value
+
+        x.value = "";
+        y.value = "";
+      }
+    }
+
+
+
+    function resetError(x, y) {
+      let error = false;
+      let errElement = document.getElementsByClassName('error');
+      for (let item of errElement) {
+        item.innerHTML = '';
+      }
+      if (!x.value) {
+        error = true;
+        x.closest('.field-wrap').getElementsByClassName('error')[0].innerHTML = 'Please enter the number';
+      }
+      if (!y.value) {
+        error = true;
+        y.closest('.field-wrap').getElementsByClassName('error')[0].innerHTML = 'Please enter the number';
+      }
+      return error;
+    }
+
+    function getOutValue(val1, val2, type) {
+      let value = 0;
+      if (type === 'add') {
+        value = val1 + val2;
+      }
+      else if (type === 'sub') {
+        value = val1 - val2;
+      }
+      else if (type === 'mul') {
+        value = val1 * val2;
+      }
+      else if (type === 'div') {
+        value = val1 / val2;
+      }
+      return value;
+    }
+  </script>
+</body>
+
+</html>

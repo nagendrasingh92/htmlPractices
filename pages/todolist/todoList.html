@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="/assets/css/todoList.css">
+  <script src="/assets/js/todoList.js"></script>
+</head>
+
+<body>
+  <div class="todoWrapper">
+    <input type="text" id="tableInput" placeholder="Please type here" name="tableInput">
+    <div class="inputBttn">Add
+    </div>
+  </div>
+  <div class="error">
+  </div>
+
+  <div class="searchWrap">
+    <input class="searchEle" name="search" placeholder="search task name">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <select id="filterStatus" name="filter">
+    <option value="">All</option>
+    <option value="completed">Completed</option>
+    <option value="pending">Pending</option>
+  </select>
+
+  <ul class="tableData">
+    No task.
+  </ul>
+  <div id="addNewTask">
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array of objects</title>
+  <link rel="stylesheet" href="/assets/css/arrayOfObjects.css">
+</head>
+
+<body>
+  <div onclick="getData()">Get data </div>
+  <div class="serachWrap">
+    <input type="text" class="searchBox" placeholder="Type Here" name="searchBox" onkeyup="myFunction()">
+  </div>
+
+  <table id="userData">
+    <thead>
+      <tr>
+        <th>user id</th>
+        <th>id</th>
+        <th>title</th>
+        <th>completed</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script>
+    function getData() {
+
+      fetch('https://jsonplaceholder.typicode.com/todos')
+        .then(response => response.json())
+        .then(json => {
+          let element = document.getElementById('userData');
+
+          let row = ''
+          json.forEach((item) => {
+            row += `<tr>
+            <td>${item.userId}</td>
+            <td>${item.id}</td>
+            <td>${item.title}</td>
+            <td>${item.completed}</td>
+            </tr>`
+          })
+          element.querySelector('tbody').innerHTML = row;
+        })
+    }
+
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementsByClassName("searchBox")[0];
+      filter = input.value.toUpperCase();
+      table = document.getElementById("userData");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[2];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

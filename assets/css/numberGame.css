@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item{
+    border: 1px solid black;
+    text-align: center;
+    flex: 1 0 20%;
+    margin: 5px;
+    padding: 20px;
+  }
+  
+  .active{
+    background-color: red;
+  }
